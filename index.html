@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>prtofolio</title>
+</head>
+<body>
+    
+    <!--  nav-->
+<nav id="header" role="navigation" aria-label="التنقل الرئيسي" class="navbar navbar-expand-lg fixed-top bg-white border-bottom shadow-sm">
+  <div class="container px-4 px-md-5 py-2">
+    
+    <div class="d-flex align-items-center gap-3">
+      <div class="logo-icon d-flex align-items-center justify-content-center" aria-hidden="true">
+        <i class="fa-solid fa-code text-white fs-5"></i>
+      </div>
+      <div class="logo-text fs-2 fw-bold">أحمد حسن</div>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarMenu" aria-controls="mainNavbarMenu" aria-expanded="false" aria-label="تبديل القائمة">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end mt-3 mt-lg-0" id="mainNavbarMenu">
+      <div class="nav-links d-flex flex-column flex-lg-row gap-4 align-items-lg-center w-100 justify-content-end" role="menubar">
+        <a class="nav-link-custom" href="#hero-section" role="menuitem">الرئيسية</a>
+        <a class="nav-link-custom" href="#about" role="menuitem">عني</a>
+        <a class="nav-link-custom" href="#portfolio" role="menuitem">الأعمال</a>
+        <a class="nav-link-custom" href="#experience" role="menuitem">الخبرة</a>
+        <a class="nav-link-custom" href="#testimonials" role="menuitem">التوصيات</a>
+        <a class="nav-link-custom" href="#contact" role="menuitem">تواصل</a>
+        
+        <button id="theme-toggle-button" class="theme-toggle-btn my-2 my-lg-0 align-self-start align-self-lg-center" aria-label="تبديل الوضع الداكن" aria-pressed="false" type="button">
+          <span class="theme-toggle-circle">
+            <i class="fa-solid fa-sun sun-icon" aria-hidden="true"></i>
+            <i class="fa-solid fa-moon moon-icon" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</nav>
+<!-- end nav-->
+
+<!-- hero section -->
+ <section id="hero-section" class="hero-section position-relative d-flex align-items-center overflow-hidden pt-5 pb-5" aria-labelledby="hero-title">
+  <div class="position-absolute top-0 start-0 w-100 h-100 z-0">
+    <div class="hero-bg-gradient"></div>
+    <div class="hero-grid-pattern"></div>
+  </div>
+
+  <div class="container my-4 px-4 px-md-5 pt-lg-0 z-1">
+    <div class="row g-4 g-lg-5 align-items-center">
+      
+      <div class="col-12 col-lg-6 order-2 order-lg-1 text-end" >
+        
+        <div class="status-badge d-inline-flex align-items-center gap-2 mb-4">
+          <span class="ping-dot-wrapper">
+            <span class="ping-dot-1"></span>
+            <span class="ping-dot-2"></span>
+          </span>
+          <span class="status-text">متاح للشغل الحر</span>
+        </div>
+
+        <div class="mb-3">
+          <p class="hero-subtitle mb-2">مرحباً، أنا 👋</p>
+          <h1 id="hero-title" class="hero-title fw-bold mb-3">
+            <span class="gradient-text-animate">أحمد حسن</span>
+          </h1>
+        </div>
+
+        <div class="role-badge d-inline-flex align-items-center gap-2 mb-4">
+          <span class="fw-semibold px-3 py-1">Frontend Developer</span>
+          <div class="role-icon d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-code text-white"></i>
+          </div>
+        </div>
+
+        <p class="hero-desc mb-4">
+          بحول أفكارك لـ <span class="text-primary fw-semibold">تجارب رقمية مميزة</span>. 
+          متخصص في بناء مواقع وتطبيقات ويب حديثة بأحدث التقنيات.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3 mb-5 justify-content-start">
+          <a href="#portfolio" class=" btn-gradient">
+            <span>استكشف أعمالي</span>
+            <i class="fa-solid fa-arrow-left me-2"></i>
+          </a>
+          <a href="#contact" class=" btn-gradient">
+            <span>تواصل معي</span>
+            <i class="fa-solid fa-paper-plane me-2"></i>
+          </a>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2 justify-content-start">
+          <div class="tech-badge"><span>React</span></div>
+          <div class="tech-badge"><span>TypeScript</span></div>
+          <div class="tech-badge"><span>Tailwind</span></div>
+          <div class="tech-badge"><span>Next.js</span></div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6 order-1 order-lg-2 d-flex justify-content-center">
+        <div class="hero-image-wrapper">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+
+          <div class="profile-img-container">
+            <div class="profile-img-inner">
+              <img class="object-fit-cover" src="./imgs/hero-section-img-Dsy3Av-w.webp" alt="أحمد حسن - مطور واجهات أمامية" />
+            </div>
+          </div>
+
+          <div class="floating-badge badge-1"><i class="fa-brands fa-react text-react"></i></div>
+          <div class="floating-badge badge-2"><i class="fa-brands fa-vuejs text-vue"></i></div>
+          <div class="floating-badge badge-3"><i class="fa-solid fa-figma text-figma"></i></div>
+          <div class="floating-badge badge-4"><i class="fa-solid fa-code text-primary"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- hero section -->
+
+<!-- About section -->
+ <section
+  id="about"
+  
+  class="about-section py-5 px-4 px-md-5 position-relative overflow-hidden"
+  aria-labelledby="about-title"
+>
+
+  <div class="container container-xxl position-relative z-1">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <span class="section-subtitle">من أنا</span>
+      <h2 class="section-title">
+        عن <span class="gradient-text">أحمد حسن</span>
+      </h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="row g-5 align-items-start">
+      
+      <!-- Right Side - النص -->
+      <div class="col-12 col-lg-6">
+        <div class="d-flex flex-column gap-4">
+          
+          <!-- Personal Story -->
+          <div class="position-relative">
+            <div class="quote-mark">"</div>
+            <div class="position-relative z-1">
+              <h3 class="about-heading">
+                بحب أحول الأفكار <span class="text-primary">لواقع رقمي</span>
+              </h3>
+              <p class="about-text">
+                مطور واجهات أمامية بخبرة +8 سنوات في بناء تطبيقات ويب حديثة وتصميم تجارب مستخدم استثنائية.
+              </p>
+              <p class="about-text">
+                بشتغل بأحدث التقنيات زي React و Next.js و TypeScript عشان أقدم حلول عالية الجودة وتعدي التوقعات.
+              </p>
+            </div>
+          </div>
+
+          <!-- Simple Timeline / Badges -->
+          <div class="d-flex align-items-center gap-3 flex-wrap">
+            <div class="info-badge"><i class="fa-solid fa-graduation-cap text-primary"></i><span>حاسبات ومعلومات</span></div>
+            <div class="info-badge"><i class="fa-solid fa-briefcase text-secondary"></i><span>+50 مشروع</span></div>
+            <div class="info-badge"><i class="fa-solid fa-users text-accent"></i><span>+35 عميل سعيد</span></div>
+          </div>
+
+          <!-- Services List -->
+          <div class="services-card">
+            <h4 class="fw-bold mb-3 d-flex align-items-center gap-2">
+              ما أقدمه <i class="fa-solid fa-rocket text-primary"></i>
+            </h4>
+            <div class="d-flex flex-column gap-3">
+              <div class="service-item"><span class="dot bg-primary"></span><span>تطوير تطبيقات ويب متكاملة بـ React & Next.js</span></div>
+              <div class="service-item"><span class="dot bg-secondary"></span><span>تصميم واجهات مستخدم حديثة وجذابة</span></div>
+              <div class="service-item"><span class="dot bg-accent"></span><span>تحسين الأداء وسرعة التحميل</span></div>
+              <div class="service-item"><span class="dot bg-success"></span><span>تطوير مواقع متوافقة مع جميع الأجهزة</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left Side - Terminal + Stats -->
+      <div class="col-12 col-lg-6">
+        <div class="d-flex flex-column gap-4">
+          
+          <!-- Code Terminal Card -->
+          <div class="terminal-card">
+            <!-- Terminal Header -->
+            <div class="terminal-header d-flex align-items-center gap-2 px-3 py-2">
+              <div class="terminal-dot bg-danger"></div>
+              <div class="terminal-dot bg-warning"></div>
+              <div class="terminal-dot bg-success"></div>
+              <span class="terminal-title">ahmed.js</span>
+            </div>
+            <!-- Terminal Content -->
+            <div class="terminal-body">
+              <p class="text-muted">// من أنا باختصار</p>
+              <p class="mt-3"><span class="text-purple">const</span> <span class="text-blue">ahmed</span> = {</p>
+                <p class="ms-4" dir="ltr"> <span class="text-success">name</span>: <span class="text-warning" dir="rtl">"أحمد حسن"</span>,</p>
+              <p class="ms-4"><span class="text-success">title</span>: <span class="text-warning">"Frontend Developer"</span>,</p>
+              <p class="ms-4"><span class="text-success">experience</span>: <span class="text-orange">8</span> + <span class="text-warning">" years"</span>,</p>
+              <p class="ms-4"><span class="text-success">location</span>: <span class="text-warning">"Cairo, Egypt 🇪🇬"</span>,</p>
+              <p class="ms-4"><span class="text-success">skills</span>: [</p>
+              <p class="ms-5"><span class="text-warning">"React"</span>, <span class="text-warning">"Next.js"</span>,</p>
+              <p class="ms-5"><span class="text-warning">"TypeScript"</span>, <span class="text-warning">"Tailwind"</span></p>
+              <p class="ms-4">],</p>
+              <p class="ms-4"><span class="text-success">passion</span>: <span class="text-warning">"Creating pixel-perfect UIs"</span>,</p>
+              <p class="ms-4"><span class="text-success">available</span>: <span class="text-blue">true</span>,</p>
+              <p class="ms-4"><span class="text-success">hireable</span>: <span class="text-blue">true</span></p>
+              <p>};</p>
+              <p class="mt-3"><span class="text-purple">export default</span> <span class="text-blue">ahmed</span>;</p>
+            </div>
+          </div>
+
+          <!-- Quick Stats Row -->
+          <div class="row g-3">
+            <div class="col-4">
+              <div class="stat-card"><div class="stat-number text-primary">50+</div><div class="stat-label">مشروع</div></div>
+            </div>
+            <div class="col-4">
+              <div class="stat-card"><div class="stat-number text-secondary">8+</div><div class="stat-label">سنوات</div></div>
+            </div>
+            <div class="col-4">
+              <div class="stat-card"><div class="stat-number text-accent">35+</div><div class="stat-label">عميل</div></div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-end">
+            <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github fs-4"></i></a>
+            <a href="#" class="social-icon linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fs-4"></i></a>
+            <a href="#" class="social-icon twitter" aria-label="Twitter"><i class="fa-brands fa-twitter fs-4"></i></a>
+            <a href="#" class="social-icon dribbble" aria-label="Dribbble"><i class="fa-brands fa-dribbble fs-4"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About section -->
+<!-- skills section -->
+ <section
+  id="skills-section"
+  dir="rtl"
+  class="skills-section py-5 px-4 px-md-5 position-relative overflow-hidden"
+  aria-labelledby="skills-title"
+>
+  
+  
+  <div class="container container-xxl position-relative z-1">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <span class="section-subtitle text-secondary">ما أتقنه</span>
+      <h2 id="skills-title" class="section-title">
+        المهارات و <span class="gradient-text-secondary">التقنيات</span>
+      </h2>
+      <div class="section-divider-secondary mx-auto"></div>
+    </div>
+
+    <!-- Main Skills Grid -->
+    <div class="row g-4">
+      <!-- Skill Card 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="skill-card">
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <h3 class="h4 fw-bold mb-0">React.js</h3>
+            <i class="fa-brands fa-react display-6 text-primary"></i>
+          </div>
+          <div class="progress-custom" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في React.js">
+            <div class="progress-bar-gradient progress-bar-primary" style="width: 95%"></div>
+          </div>
+          <p class="skill-desc">خبرة متقدمة في بناء تطبيقات React معقدة</p>
+        </div>
+      </div>
+
+      <!-- Skill Card 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="skill-card skill-card-alt">
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <h3 class="h4 fw-bold mb-0">Next.js</h3>
+            <i class="fa-solid fa-n display-6 text-secondary"></i>
+          </div>
+          <div class="progress-custom" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في Next.js">
+            <div class="progress-bar-gradient progress-bar-secondary" style="width: 90%"></div>
+          </div>
+          <p class="skill-desc">تطوير تطبيقات SSR وSSG متقدمة</p>
+        </div>
+      </div>
+
+      <!-- Skill Card 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="skill-card skill-card-alt">
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <h3 class="h4 fw-bold mb-0">TypeScript</h3>
+            <i class="fa-solid fa-code display-6 text-accent"></i>
+          </div>
+          <div class="progress-custom" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في TypeScript">
+            <div class="progress-bar-gradient progress-bar-accent" style="width: 88%"></div>
+          </div>
+          <p class="skill-desc">كتابة كود آمن ومنظم بشكل احترافي</p>
+        </div>
+      </div>
+
+      <!-- Skill Card 4 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="skill-card">
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <h3 class="h4 fw-bold mb-0">Tailwind CSS</h3>
+            <i class="fa-solid fa-wind display-6 text-primary"></i>
+          </div>
+          <div class="progress-custom" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في Tailwind CSS">
+            <div class="progress-bar-gradient progress-bar-primary" style="width: 97%"></div>
+          </div>
+          <p class="skill-desc">تصميم واجهات حديثة بسرعة عالية</p>
+        </div>
+      </div>
+
+      <!-- Skill Card 5 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="skill-card skill-card-alt">
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <h3 class="h4 fw-bold mb-0">Node.js</h3>
+            <i class="fa-brands fa-node-js display-6 text-secondary"></i>
+          </div>
+          <div class="progress-custom" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في Node.js">
+            <div class="progress-bar-gradient progress-bar-secondary" style="width: 85%"></div>
+          </div>
+          <p class="skill-desc">بناء APIs وخدمات الخلفية</p>
+        </div>
+      </div>
+
+      <!-- Skill Card 6 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="skill-card skill-card-alt">
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <h3 class="h4 fw-bold mb-0">Figma</h3>
+            <i class="fa-brands fa-figma display-6 text-accent"></i>
+          </div>
+          <div class="progress-custom" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في Figma">
+            <div class="progress-bar-gradient progress-bar-accent" style="width: 92%"></div>
+          </div>
+          <p class="skill-desc">تصميم واجهات احترافية ونماذج تفاعلية</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech Icons Row -->
+    <div class="row g-3 mt-5">
+      <div class="col-6 col-md-3">
+        <div class="tech-icon-box">
+          <i class="fa-brands fa-html5 display-4 text-orange"></i>
+          <p class="fw-medium mt-3">HTML5</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="tech-icon-box">
+          <i class="fa-brands fa-css3-alt display-4 text-blue"></i>
+          <p class="fw-medium mt-3">CSS3</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="tech-icon-box">
+          <i class="fa-brands fa-js display-4 text-warning"></i>
+          <p class="fw-medium mt-3">JavaScript</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="tech-icon-box">
+          <i class="fa-brands fa-git-alt display-4 text-danger"></i>
+          <p class="fw-medium mt-3">Git</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- skills section -->
+<!-- prtofolio section -->
+ <section
+  id="portfolio"
+  
+  class="portfolio-section py-5 px-4 px-md-5 position-relative overflow-hidden"
+  aria-labelledby="portfolio-title"
+>
+  <div class="portfolio-bg-blob"></div>
+  
+  <div class="container container-xxl position-relative z-1">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <span class="section-subtitle">أعمالي</span>
+      <h2 id="portfolio-title" class="section-title">
+        معرض <span class="gradient-text">المشاريع</span>
+      </h2>
+      <div class="section-divider mx-auto"></div>
+    </div>
+
+    <!-- Filters -->
+    <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap" id="portfolio-filters" role="group" aria-label="فلترة المشاريع">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true" type="button">الكل</button>
+      <button class="filter-btn" data-filter="web" aria-pressed="false" type="button">مواقع الويب</button>
+      <button class="filter-btn" data-filter="app" aria-pressed="false" type="button">التطبيقات</button>
+      <button class="filter-btn" data-filter="design" aria-pressed="false" type="button">التصميم</button>
+      <button class="filter-btn" data-filter="ecommerce" aria-pressed="false" type="button">التجارة الإلكترونية</button>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="row g-4" id="portfolio-grid">
+      
+      <!-- Item 1 -->
+      <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="ecommerce">
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async" src="./imgs/portfolio-1-BqicZ04C.webp" alt="متجر إلكتروني متكامل" />
+            <div class="portfolio-overlay"></div>
+          </div>
+          <div class="p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="category-badge bg-primary-subtle text-primary">موقع ويب</span>
+              <div class="d-flex gap-2">
+                <a href="#" class="portfolio-icon" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" class="portfolio-icon" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="h4 fw-bold mb-2">متجر إلكتروني متكامل</h3>
+            <p class="portfolio-desc mb-3">منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="app">
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async" src="./imgs/portfolio-2-D0_acfF_.webp" alt="تطبيق إدارة المهام" />
+            <div class="portfolio-overlay"></div>
+          </div>
+          <div class="p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="category-badge bg-secondary-subtle text-secondary">تطبيق</span>
+              <div class="d-flex gap-2">
+                <a href="#" class="portfolio-icon icon-secondary" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" class="portfolio-icon icon-secondary" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="h4 fw-bold mb-2">تطبيق إدارة المهام</h3>
+            <p class="portfolio-desc mb-3">تطبيق ويب تفاعلي لإدارة المهام مع ميزات التعاون الجماعي</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tech-tag">Vue.js</span><span class="tech-tag">Firebase</span><span class="tech-tag">Tailwind</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="design">
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async" src="./imgs/portfolio-3-uJsBXCgl.webp" alt="موقع شخصي إبداعي" />
+            <div class="portfolio-overlay"></div>
+          </div>
+          <div class="p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="category-badge bg-accent-subtle text-accent">تصميم</span>
+              <div class="d-flex gap-2">
+                <a href="#" class="portfolio-icon icon-accent" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" class="portfolio-icon icon-accent" aria-label="تصميم المشروع على Figma"><i class="fa-brands fa-figma"></i></a>
+              </div>
+            </div>
+            <h3 class="h4 fw-bold mb-2">موقع شخصي إبداعي</h3>
+            <p class="portfolio-desc mb-3">تصميم موقع شخصي بأسلوب عصري وألوان جريئة</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tech-tag">Figma</span><span class="tech-tag">UI/UX</span><span class="tech-tag">Prototype</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Item 4 -->
+      <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="design">
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async" src="./imgs/portfolio-4-Czusdp5K.webp" alt="موقع شخصي إبداعي" />
+            <div class="portfolio-overlay"></div>
+          </div>
+          <div class="p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="category-badge bg-accent-subtle text-accent">تصميم</span>
+              <div class="d-flex gap-2">
+                <a href="#" class="portfolio-icon icon-accent" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" class="portfolio-icon icon-accent" aria-label="تصميم المشروع على Figma"><i class="fa-brands fa-figma"></i></a>
+              </div>
+            </div>
+            <h3 class="h4 fw-bold mb-2">موقع شخصي إبداعي</h3>
+            <p class="portfolio-desc mb-3">تصميم موقع شخصي بأسلوب عصري وألوان جريئة</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tech-tag">Figma</span><span class="tech-tag">UI/UX</span><span class="tech-tag">Prototype</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Item 5 -->
+      <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="web">
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async" src="./imgs/portfolio-5-ChqqtI-W.webp" alt="موقع شخصي إبداعي" />
+            <div class="portfolio-overlay"></div>
+          </div>
+          <div class="p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="category-badge bg-accent-subtle text-accent">تصميم</span>
+              <div class="d-flex gap-2">
+                <a href="#" class="portfolio-icon icon-accent" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" class="portfolio-icon icon-accent" aria-label="تصميم المشروع على Figma"><i class="fa-brands fa-figma"></i></a>
+              </div>
+            </div>
+            <h3 class="h4 fw-bold mb-2">موقع شخصي إبداعي</h3>
+            <p class="portfolio-desc mb-3">تصميم موقع شخصي بأسلوب عصري وألوان جريئة</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tech-tag">Figma</span><span class="tech-tag">UI/UX</span><span class="tech-tag">Prototype</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Item 6 -->
+      <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="design">
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async" src="./imgs/portfolio-6-C9bxzsei.webp" alt="موقع شخصي إبداعي" />
+            <div class="portfolio-overlay"></div>
+          </div>
+          <div class="p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="category-badge bg-accent-subtle text-accent">تصميم</span>
+              <div class="d-flex gap-2">
+                <a href="#" class="portfolio-icon icon-accent" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" class="portfolio-icon icon-accent" aria-label="تصميم المشروع على Figma"><i class="fa-brands fa-figma"></i></a>
+              </div>
+            </div>
+            <h3 class="h4 fw-bold mb-2">موقع شخصي إبداعي</h3>
+            <p class="portfolio-desc mb-3">تصميم موقع شخصي بأسلوب عصري وألوان جريئة</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tech-tag">Figma</span><span class="tech-tag">UI/UX</span><span class="tech-tag">Prototype</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Item 7 -->
+      <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="design">
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async" src="./imgs/portfolio-7-BXDNVwGk.webp" alt="موقع شخصي إبداعي" />
+            <div class="portfolio-overlay"></div>
+          </div>
+          <div class="p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="category-badge bg-accent-subtle text-accent">تصميم</span>
+              <div class="d-flex gap-2">
+                <a href="#" class="portfolio-icon icon-accent" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" class="portfolio-icon icon-accent" aria-label="تصميم المشروع على Figma"><i class="fa-brands fa-figma"></i></a>
+              </div>
+            </div>
+            <h3 class="h4 fw-bold mb-2">موقع شخصي إبداعي</h3>
+            <p class="portfolio-desc mb-3">تصميم موقع شخصي بأسلوب عصري وألوان جريئة</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tech-tag">Figma</span><span class="tech-tag">UI/UX</span><span class="tech-tag">Prototype</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Item 8 -->
+      <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="design">
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async" src="./imgs/portfolio-8-BnHB_F_a.webp" alt="موقع شخصي إبداعي" />
+            <div class="portfolio-overlay"></div>
+          </div>
+          <div class="p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="category-badge bg-accent-subtle text-accent">تصميم</span>
+              <div class="d-flex gap-2">
+                <a href="#" class="portfolio-icon icon-accent" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" class="portfolio-icon icon-accent" aria-label="تصميم المشروع على Figma"><i class="fa-brands fa-figma"></i></a>
+              </div>
+            </div>
+            <h3 class="h4 fw-bold mb-2">موقع شخصي إبداعي</h3>
+            <p class="portfolio-desc mb-3">تصميم موقع شخصي بأسلوب عصري وألوان جريئة</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tech-tag">Figma</span><span class="tech-tag">UI/UX</span><span class="tech-tag">Prototype</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Item 9 -->
+      <div class="col-12 col-md-6 col-lg-4 portfolio-item" data-category="design">
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async" src="./imgs/portfolio-9-Q6q-wpwU.webp" alt="موقع شخصي إبداعي" />
+            <div class="portfolio-overlay"></div>
+          </div>
+          <div class="p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="category-badge bg-accent-subtle text-accent">تصميم</span>
+              <div class="d-flex gap-2">
+                <a href="#" class="portfolio-icon icon-accent" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" class="portfolio-icon icon-accent" aria-label="تصميم المشروع على Figma"><i class="fa-brands fa-figma"></i></a>
+              </div>
+            </div>
+            <h3 class="h4 fw-bold mb-2">موقع شخصي إبداعي</h3>
+            <p class="portfolio-desc mb-3">تصميم موقع شخصي بأسلوب عصري وألوان جريئة</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tech-tag">Figma</span><span class="tech-tag">UI/UX</span><span class="tech-tag">Prototype</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="#contact" class="btn btn-gradient btn-lg">
+        <i class="fa-solid fa-rocket me-2"></i> لنبدأ مشروعك القادم
+      </a>
+    </div>
+  </div>
+</section>
+<!-- prtofolio section -->
+
+<!-- expernice section -->
+ <section
+  id="experience"
+  dir="rtl"
+  class="experience-section py-5 px-4 px-md-5 position-relative overflow-hidden"
+  aria-labelledby="experience-title"
+>
+  <div class="experience-bg-blob"></div>
+  
+  <div class="container container-xxl position-relative z-1">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <span class="section-subtitle text-secondary">مسيرتي المهنية</span>
+      <h2 id="experience-title" class="section-title">
+        الخبرة <span class="gradient-text-secondary">العملية</span>
+      </h2>
+      <div class="section-divider-secondary mx-auto"></div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline-wrapper position-relative">
+      <div class="timeline-line"></div>
+
+      <div class="d-flex flex-column gap-5">
+        
+        <!-- Item 1 - Left -->
+        <div class="row timeline-item align-items-center" id="experience-1">
+          <div class="col-12 col-lg-6">
+            <div class="timeline-card timeline-card-left">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="date-badge bg-primary-subtle text-primary">2022 - الآن</span>
+                <i class="fa-solid fa-briefcase display-6 text-primary"></i>
+              </div>
+              <h3 class="h3 fw-bold mb-2">مطور واجهات أمامية أول</h3>
+              <p class="h5 text-secondary mb-3">شركة التقنية المتقدمة</p>
+              <p class="timeline-desc mb-3">
+                قيادة فريق من 5 مطورين في بناء تطبيقات ويب معقدة باستخدام React و Next.js. 
+                تحسين أداء التطبيقات بنسبة 40% وتطوير نظام تصميم شامل.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tech-tag">React</span><span class="tech-tag">Next.js</span>
+                <span class="tech-tag">TypeScript</span><span class="tech-tag">Team Lead</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot bg-primary"></div>
+          <div class="col-12 col-lg-6 d-none d-lg-block"></div>
+        </div>
+
+        <!-- Item 2 - Right -->
+        <div class="row timeline-item align-items-center" id="experience-2">
+          <div class="col-12 col-lg-6 d-none d-lg-block"></div>
+          <div class="timeline-dot bg-secondary"></div>
+          <div class="col-12 col-lg-6">
+            <div class="timeline-card timeline-card-right">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <i class="fa-solid fa-laptop-code display-6 text-secondary"></i>
+                <span class="date-badge bg-secondary-subtle text-secondary">2020 - 2022</span>
+              </div>
+              <h3 class="h3 fw-bold mb-2">مطور Full Stack</h3>
+              <p class="h5 text-secondary mb-3">استوديو الإبداع الرقمي</p>
+              <p class="timeline-desc mb-3">
+                تطوير أكثر من 25 موقع ويب وتطبيق للعملاء. العمل على مشاريع متنوعة من التجارة 
+                الإلكترونية إلى المنصات التعليمية باستخدام MERN Stack.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-end">
+                <span class="tech-tag">MongoDB</span><span class="tech-tag">Express</span>
+                <span class="tech-tag">React</span><span class="tech-tag">Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 - Left -->
+        <div class="row timeline-item align-items-center" id="experience-3">
+          <div class="col-12 col-lg-6">
+            <div class="timeline-card timeline-card-left">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="date-badge bg-accent-subtle text-accent">2019 - 2020</span>
+                <i class="fa-solid fa-code display-6 text-accent"></i>
+              </div>
+              <h3 class="h3 fw-bold mb-2">مطور واجهات أمامية</h3>
+              <p class="h5 text-accent mb-3">وكالة التسويق الرقمي</p>
+              <p class="timeline-desc mb-3">
+                تطوير واجهات مستخدم تفاعلية ومتجاوبة لحملات تسويقية متعددة. 
+                التعاون مع فريق التصميم لتحويل النماذج إلى تطبيقات عملية.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tech-tag">HTML/CSS</span><span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">jQuery</span><span class="tech-tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-dot bg-accent"></div>
+          <div class="col-12 col-lg-6 d-none d-lg-block"></div>
+        </div>
+
+        <!-- Item 4 - Right -->
+        <div class="row timeline-item align-items-center" id="experience-4">
+          <div class="col-12 col-lg-6 d-none d-lg-block"></div>
+          <div class="timeline-dot bg-primary"></div>
+          <div class="col-12 col-lg-6">
+            <div class="timeline-card timeline-card-right">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <i class="fa-solid fa-graduation-cap display-6 text-primary"></i>
+                <span class="date-badge bg-primary-subtle text-primary">2018 - 2019</span>
+              </div>
+              <h3 class="h3 fw-bold mb-2">متدرب تطوير ويب</h3>
+              <p class="h5 text-primary mb-3">شركة البرمجيات الذكية</p>
+              <p class="timeline-desc mb-3">
+                برنامج تدريبي مكثف لمدة عام في تطوير الويب. تعلم أساسيات البرمجة وأفضل الممارسات 
+                والعمل على مشاريع حقيقية تحت إشراف مطورين محترفين.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-end">
+                <span class="tech-tag">Git</span><span class="tech-tag">APIs</span><span class="tech-tag">Responsive Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Cards -->
+    <div class="row g-4 mt-5">
+      <div class="col-12 col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon bg-gradient-primary"><i class="fa-solid fa-award display-6 text-white"></i></div>
+          <h3 class="h4 fw-bold mb-2">شهادات معتمدة</h3>
+          <p class="text-muted">AWS Certified Developer<br />Google UX Design Professional</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon bg-gradient-secondary"><i class="fa-solid fa-users display-6 text-white"></i></div>
+          <h3 class="h4 fw-bold mb-2">فرق العمل</h3>
+          <p class="text-muted">خبرة في العمل مع فرق متعددة<br />التخصصات والثقافات</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon bg-gradient-accent"><i class="fa-solid fa-lightbulb display-6 text-white"></i></div>
+          <h3 class="h4 fw-bold mb-2">الابتكار</h3>
+          <p class="text-muted">دائماً أبحث عن طرق جديدة<br />لحل المشاكل التقنية</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- expernice section -->
+
+<!-- testmonials section -->
+ <section
+  id="testimonials"
+  dir="rtl"
+  class="testimonials-section py-5 px-4 px-md-5 position-relative overflow-hidden"
+  aria-labelledby="testimonials-title"
+>
+  <div class="testimonials-bg-blob"></div>
+  
+  <div class="container container-xxl position-relative z-1">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <span class="section-subtitle text-accent">آراء العملاء</span>
+      <h2 id="testimonials-title" class="section-title">
+        ماذا يقول <span class="gradient-text-accent">العملاء</span>
+      </h2>
+      <div class="section-divider-accent mx-auto"></div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="position-relative mb-5 px-2 px-lg-5">
+      <div class="overflow-hidden">
+        <div
+          id="testimonials-carousel"
+          class="d-flex transition-transform duration-500"
+          role="region"
+          aria-label="عرض آراء العملاء"
+          aria-live="polite"
+        >
+          <!-- Card 1 -->
+          <div class="testimonial-slide col-12 col-sm-6 col-lg-4 flex-shrink-0 px-2 px-lg-3">
+            <div class="testimonial-card">
+              <div class="d-flex align-items-center mb-4">
+                <img src="/imgs/avatar-1-BQH9KX0X.webp" alt="صورة أحمد السعيد" class="avatar border-accent" />
+                <div>
+                  <h4 class="h5 fw-bold mb-0">أحمد السعيد</h4>
+                  <p class="text-muted mb-0">مدير شركة التقنية الحديثة</p>
+                </div>
+              </div>
+              <div class="d-flex mb-3" role="img" aria-label="تقييم 5 من 5 نجوم">
+                <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <p class="testimonial-text">
+                "شغل أحمد معانا كان حاجة تانية خالص. قدم حلول مبتكرة لكل المشاكل اللي واجهتنا. 
+                الموقع اللي عمله عدى كل توقعاتنا في التصميم والأداء."
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-slide col-12 col-sm-6 col-lg-4 flex-shrink-0 px-2 px-lg-3">
+            <div class="testimonial-card">
+              <div class="d-flex align-items-center mb-4">
+                <img src="/imgs/avatar-2-CyFiVXIH.webp" alt="صورة سيف أسامة" class="avatar border-primary" />
+                <div>
+                  <h4 class="h5 fw-bold mb-0">سيف أسامة</h4>
+                  <p class="text-muted mb-0">ميديا باير</p>
+                </div>
+              </div>
+              <div class="d-flex mb-3"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i></div>
+              <p class="testimonial-text">"المتجر بتاعنا بقى محترف ومريح جداً في الاستخدام. مبيعاتنا زادت 60% في أول شهر. شكراً يا أحمد على المجهود الجبار!"</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="testimonial-slide col-12 col-sm-6 col-lg-4 flex-shrink-0 px-2 px-lg-3">
+            <div class="testimonial-card">
+              <div class="d-flex align-items-center mb-4">
+                <img src="/imgs/avatar-3-CmoFRkys.webp" alt="صورة سيف أسامة" class="avatar border-primary" />
+                <div>
+                  <h4 class="h5 fw-bold mb-0">سيف أسامة</h4>
+                  <p class="text-muted mb-0">ميديا باير</p>
+                </div>
+              </div>
+              <div class="d-flex mb-3"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i></div>
+              <p class="testimonial-text">"المتجر بتاعنا بقى محترف ومريح جداً في الاستخدام. مبيعاتنا زادت 60% في أول شهر. شكراً يا أحمد على المجهود الجبار!"</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="testimonial-slide col-12 col-sm-6 col-lg-4 flex-shrink-0 px-2 px-lg-3">
+            <div class="testimonial-card">
+              <div class="d-flex align-items-center mb-4">
+                <img src="/imgs/avatar-4-CI2X8fvY.webp" alt="صورة سيف أسامة" class="avatar border-primary" />
+                <div>
+                  <h4 class="h5 fw-bold mb-0">سيف أسامة</h4>
+                  <p class="text-muted mb-0">ميديا باير</p>
+                </div>
+              </div>
+              <div class="d-flex mb-3"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i></div>
+              <p class="testimonial-text">"المتجر بتاعنا بقى محترف ومريح جداً في الاستخدام. مبيعاتنا زادت 60% في أول شهر. شكراً يا أحمد على المجهود الجبار!"</p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="testimonial-slide col-12 col-sm-6 col-lg-4 flex-shrink-0 px-2 px-lg-3">
+            <div class="testimonial-card">
+              <div class="d-flex align-items-center mb-4">
+                <img src="/imgs/avatar-5-BF_5vAuR.webp" alt="صورة سيف أسامة" class="avatar border-primary" />
+                <div>
+                  <h4 class="h5 fw-bold mb-0">سيف أسامة</h4>
+                  <p class="text-muted mb-0">ميديا باير</p>
+                </div>
+              </div>
+              <div class="d-flex mb-3"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i></div>
+              <p class="testimonial-text">"المتجر بتاعنا بقى محترف ومريح جداً في الاستخدام. مبيعاتنا زادت 60% في أول شهر. شكراً يا أحمد على المجهود الجبار!"</p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="testimonial-slide col-12 col-sm-6 col-lg-4 flex-shrink-0 px-2 px-lg-3">
+            <div class="testimonial-card">
+              <div class="d-flex align-items-center mb-4">
+                <img src="/imgs/avatar-6-IIG--UcM.webp" alt="صورة سيف أسامة" class="avatar border-primary" />
+                <div>
+                  <h4 class="h5 fw-bold mb-0">سيف أسامة</h4>
+                  <p class="text-muted mb-0">ميديا باير</p>
+                </div>
+              </div>
+              <div class="d-flex mb-3"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i></div>
+              <p class="testimonial-text">"المتجر بتاعنا بقى محترف ومريح جداً في الاستخدام. مبيعاتنا زادت 60% في أول شهر. شكراً يا أحمد على المجهود الجبار!"</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <button id="next-testimonial" class="carousel-nav-btn carousel-prev" aria-label="التوصية التالية" type="button">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button id="prev-testimonial" class="carousel-nav-btn carousel-next" aria-label="التوصية السابقة" type="button">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Indicators -->
+    <div class="d-flex justify-content-center gap-3 mb-5" role="tablist" aria-label="مؤشرات التوصيات">
+      <button class="carousel-indicator active" data-index="0" role="tab" aria-label="التوصية 1" aria-selected="true" type="button"></button>
+      <button class="carousel-indicator" data-index="1" role="tab" aria-label="التوصية 2" aria-selected="false" type="button"></button>
+      <button class="carousel-indicator" data-index="2" role="tab" aria-label="التوصية 3" aria-selected="false" type="button"></button>
+      <button class="carousel-indicator" data-index="3" role="tab" aria-label="التوصية 4" aria-selected="false" type="button"></button>
+    </div>
+
+    <!-- CTA Box -->
+    <div class="cta-gradient-box">
+      <div class="cta-inner-box">
+        <h3 class="display-6 fw-bold mb-3">جاهز تبدأ مشروعك؟</h3>
+        <p class="fs-5  mb-4 mx-auto" style="max-width: 40rem;">يلا نشتغل سوا عشان نحول أفكارك لواقع مبهر</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="#contact" class="btn btn-gradient btn-lg">تواصل معي الآن</a>
+          <a href="#portfolio" class="btn btn-gradient btn-lg">شاهد المزيد من الأعمال</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- testmonials section -->
+
+
+<!-- statsfication section -->
+<section
+  id="statistics-section"
+  
+  class="statistics-section py-5 px-4 px-md-5 position-relative overflow-hidden"
+>
+  <div class="container container-xxl position-relative z-1 prize">
+    <div class="row g-4">
+      
+      <!-- Stat 1 -->
+      <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+        <div class="stat-item text-center">
+          <div class="stat-icon bg-gradient-primary">
+              <span class="display-4 text-white "><i class="fa-solid fa-project-diagram "></i> </span>
+          </div>
+          <div class="stat-number gradient-text-primary">50+</div>
+          <p class="stat-label">مشروع مكتمل</p>
+        </div>
+      </div>
+
+      
+
+      <!-- Stat 3 -->
+      <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+        <div class="stat-item text-center">
+          <div class="stat-icon bg-gradient-accent">
+           <span class="display-4 text-white"><i class="fa-solid fa-users "></i> </span> 
+          </div>
+          <div class="stat-number gradient-text-accent">8+</div>
+          <p class="stat-label">سنوات خبرة</p>
+        </div>
+      </div>
+      <!-- Stat 3 -->
+      <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+        <div class="stat-item text-center">
+          <div class="stat-icon bg-gradient-accent">
+            <i class="fa-solid fa-clock display-4 text-white"></i>
+          </div>
+          <div class="stat-number gradient-text-accent">8+</div>
+          <p class="stat-label">سنوات خبرة</p>
+        </div>
+      </div>
+      <!-- Stat 4  -->
+      <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+        <div class="stat-item text-center ">
+          <div class="stat-icon bg-gradient-accent ">
+            <span class="display-4 text-white "><i class="fa-solid fa-trophy"></i> </span>
+          </div>
+          <div class="stat-number gradient-text-accent">8+</div>
+          <p class="stat-label">سنوات خبرة</p>
+        </div>
+      </div>
+
+      
+      
+
+    </div>
+  </div>
+</section>
+<!-- statsfication section -->
+
+<!-- customer section -->
+ <section
+  id="contact"
+  dir="rtl"
+  class="contact-section py-5 px-4 px-md-5 position-relative overflow-hidden"
+  aria-labelledby="contact-title"
+>
+  <div class="contact-bg-blob"></div>
+  
+  <div class="container container-xxl position-relative z-1">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <span class="section-subtitle">تواصل معي</span>
+      <h2 id="contact-title" class="section-title">
+        يلا نبدأ <span class="gradient-text">مشروعك</span>
+      </h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="fs-5 text-muted mt-4 mx-auto" style="max-width: 40rem;">
+        عندك فكرة مشروع؟ تعالى نتكلم ونحولها لواقع
+      </p>
+    </div>
+
+    <div class="row g-5">
+      <!-- Left Side - Info -->
+      <div class="col-12 col-lg-6">
+        <div class="d-flex flex-column gap-4">
+          
+          <!-- Email Card -->
+          <a href="mailto:ahmed@example.com" class="contact-card group">
+            <div class="d-flex align-items-center gap-4">
+              <div class="contact-icon bg-gradient-primary"><i class="fa-solid fa-envelope display-5"></i></div>
+              <div>
+                <h3 class="h6 text-muted mb-1">البريد الإلكتروني</h3>
+                <p class="h5 fw-bold mb-1" dir="ltr">ahmed@example.com</p>
+                <p class="small text-muted mb-0">جاهز للرد خلال 24 ساعة</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Phone Card -->
+          <a href="tel:+201012345678" class="contact-card group">
+            <div class="d-flex align-items-center gap-4">
+              <div class="contact-icon bg-gradient-secondary"><i class="fa-solid fa-phone display-5"></i></div>
+              <div>
+                <h3 class="h6 text-muted mb-1">رقم الهاتف</h3>
+                <p class="h5 fw-bold mb-1" dir="ltr">+20 10 1234 5678</p>
+                <p class="small text-muted mb-0">متاح من 9 صباحاً - 5 مساءً</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Location Card -->
+          <div class="contact-card">
+            <div class="d-flex align-items-center gap-4">
+              <div class="contact-icon bg-gradient-accent"><i class="fa-solid fa-location-dot display-5"></i></div>
+              <div>
+                <h3 class="h6 text-muted mb-1">الموقع</h3>
+                <p class="h5 fw-bold mb-1">القاهرة، مصر</p>
+                <p class="small text-muted mb-0">متاح للعمل عن بعد</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Box -->
+          <div class="social-gradient-box">
+            <div class="social-inner-box">
+              <h3 class="h4 fw-bold mb-3 text-center">تابعني على</h3>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github fs-4"></i></a>
+                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fs-4"></i></a>
+                <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter fs-4"></i></a>
+                <a href="#" class="social-link" aria-label="Dribbble"><i class="fa-brands fa-dribbble fs-4"></i></a>
+                <a href="#" class="social-link" aria-label="Behance"><i class="fa-brands fa-behance fs-4"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side - Form -->
+      <div class="col-12 col-lg-6">
+        <div class="contact-form-wrapper">
+          <form class="d-flex flex-column gap-4" aria-label="نموذج التواصل" id="contact-form">
+            <div>
+              <label for="full-name" class="form-label fs-5 fw-medium">الاسم الكامل</label>
+              <input type="text" id="full-name" name="full-name" autocomplete="name" required class="form-control-custom" placeholder="أدخل اسمك الكامل" />
+            </div>
+            <div>
+              <label for="email" class="form-label fs-5 fw-medium">البريد الإلكتروني</label>
+              <input type="email" id="email" name="email" autocomplete="email" required class="form-control-custom" placeholder="example@email.com" />
+            </div>
+            <div>
+              <label for="phone" class="form-label fs-5 fw-medium">رقم الهاتف</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" class="form-control-custom" placeholder="+20 10 XXXX XXXX" />
+            </div>
+            
+            <!-- Custom Select 1 -->
+            <div>
+              <label class="form-label fs-5 fw-medium">نوع المشروع</label>
+              <div class="custom-select-wrapper">
+                <div class="custom-select" data-name="project-type" role="combobox" tabindex="0">
+                  <span class="selected-text text-muted">اختر نوع المشروع</span><i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="custom-options" role="listbox">
+                  <div class="custom-option" data-value="موقع ويب">موقع ويب</div>
+                  <div class="custom-option" data-value="تطبيق ويب">تطبيق ويب</div>
+                  <div class="custom-option" data-value="تطبيق جوال">تطبيق جوال</div>
+                  <div class="custom-option" data-value="تصميم UI/UX">تصميم UI/UX</div>
+                  <div class="custom-option" data-value="استشارة تقنية">استشارة تقنية</div>
+                </div>
+                <input type="hidden" name="project-type" />
+              </div>
+            </div>
+
+            <!-- Custom Select 2 -->
+            <div>
+              <label class="form-label fs-5 fw-medium">الميزانية المتوقعة</label>
+              <div class="custom-select-wrapper">
+                <div class="custom-select" data-name="budget" role="combobox" tabindex="0">
+                  <span class="selected-text text-muted">اختر الميزانية</span><i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="custom-options" role="listbox">
+                  <div class="custom-option" data-value="أقل من 20,000 جنيه">أقل من 20,000 جنيه</div>
+                  <div class="custom-option" data-value="20,000 - 50,000 جنيه">20,000 - 50,000 جنيه</div>
+                  <div class="custom-option" data-value="50,000 - 100,000 جنيه">50,000 - 100,000 جنيه</div>
+                  <div class="custom-option" data-value="أكثر من 100,000 جنيه">أكثر من 100,000 جنيه</div>
+                </div>
+                <input type="hidden" name="budget" />
+              </div>
+            </div>
+
+            <div>
+              <label for="project-details" class="form-label fs-5 fw-medium">تفاصيل المشروع</label>
+              <textarea id="project-details" name="project-details" rows="5" required class="form-control-custom" placeholder="احكيلي تفاصيل مشروعك..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gradient btn-lg w-100">
+              <i class="fa-solid fa-paper-plane me-2"></i> ابعت الرسالة
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- customer section -->
+
+<!-- footer section -->
+<footer
+  id="footer"
+  dir="rtl"
+  role="contentinfo"
+  class="footer-section py-5 px-4 px-md-5"
+>
+  <div class="container container-xxl">
+    <div class="row g-5 mb-5">
+      <!-- Column 1: About + CV -->
+      <div class="col-12 col-md-6">
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <div class="footer-logo">
+            <i class="fa-solid fa-code text-white fs-4"></i>
+          </div>
+          <div class="footer-brand">أحمد حسن</div>
+        </div>
+        <p class="footer-desc mb-4">
+          أؤمن بأن البرمجة فن. هدفي مش بس كتابة كود، بل خلق تجربة مستخدم سلسة بتسيب أثر. 
+          بدمج التصميم الجمالي مع الأداء القوي عشان أقدم منتج نهائي متكامل.
+        </p>
+
+        <!-- CV Download Button -->
+        <a href="#" class="cv-download-btn mb-4">
+          <div class="cv-icon"><i class="fa-solid fa-file-arrow-down fs-4"></i></div>
+          <div class="text-end">
+            <span class="d-block small  mb-1">تعرف على خبراتي</span>
+            <span class="d-block fw-bold fs-5">حمل السيرة الذاتية (CV)</span>
+          </div>
+          <i class="fa-solid fa-arrow-left ms-auto "></i>
+        </a>
+
+        <!-- Status -->
+        <div class="d-flex align-items-center gap-3 px-2">
+          <span class="status-dot-wrapper">
+            <span class="status-ping"></span>
+            <span class="status-dot"></span>
+          </span>
+          <p class="mb-0 ">
+            أعمل حالياً على: <span class="fw-bold ">مشروع SaaS لإدارة الفريق</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="col-6 col-md-3">
+        <h3 class="footer-heading">روابط سريعة</h3>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#hero-section">الرئيسية</a></li>
+          <li><a href="#about">عني</a></li>
+          <li><a href="#portfolio">الأعمال</a></li>
+          <li><a href="#experience">الخبرة</a></li>
+          <li><a href="#testimonials">التوصيات</a></li>
+          <li><a href="#contact">تواصل</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Services -->
+      <div class="col-6 col-md-3">
+        <h3 class="footer-heading">الخدمات</h3>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#">تطوير الويب</a></li>
+          <li><a href="#">تطوير التطبيقات</a></li>
+          <li><a href="#">تصميم UI/UX</a></li>
+          <li><a href="#">الاستشارات التقنية</a></li>
+          <li><a href="#">تحسين الأداء</a></li>
+          <li><a href="#">الصيانة والدعم</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-3 mb-md-0 ">&copy; 2025 أحمد حسن. جميع الحقوق محفوظة.</p>
+    </div>
+  </div>
+</footer>
+<!-- footer section -->
+
+  <!-- Scroll to Top Button -->
+<button
+  id="scroll-to-top"
+  class="scroll-to-top-btn"
+  aria-label="العودة للأعلى"
+  type="button"
+>
+  <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+</button>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
